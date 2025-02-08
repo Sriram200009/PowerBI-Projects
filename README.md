@@ -15,7 +15,6 @@ Inspired by a detailed walkthrough, this project delves deep into customer churn
 **Project Highlights**:
 
 - **Interactive Visualizations**: Navigate through churn rates based on demographics, tenure, services subscribed, and more.
-- **Predictive Analytics**: Leveraged forecasting models to anticipate future churn trends.
 - **Data Modeling**: Advanced relationships and hierarchies to enrich the analytical depth.
 
 **What I Learned**:
@@ -32,9 +31,7 @@ Inspired by a detailed walkthrough, this project delves deep into customer churn
 - **Power BI Desktop**
 - **DAX (Data Analysis Expressions)**
 - **Power Query**
-- **SQL Server**
 - **Microsoft Excel**
-- **R and Python Integration** *(for advanced analytics)*
 
 ## 📥 Getting Started
 
