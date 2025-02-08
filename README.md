@@ -23,7 +23,7 @@ Inspired by a detailed walkthrough, this project delves deep into customer churn
 - Enhanced storytelling techniques to guide stakeholders through data narratives.
 - Integration of external data sources for a holistic view.
 
-**Repository Link**: [Customer Churn Dashboard](https://github.com/Sriram200009/Customer-Churn-Dashboard)
+**Repository Link**: [Customer Churn Dashboard](https://github.com/Sriram200009/PowerBI-Projects.git)
 ---
 
 ## 🛠️ Technologies & Tools
@@ -67,9 +67,7 @@ Feedback is invaluable—feel free to open issues or reach out directly!
 
 ## 📷 Dashboard Previews
 
-*(Consider adding screenshots or GIFs of your dashboards to give visitors a sneak peek.)*
-
-![Customer Churn Dashboard Preview](https://link-to-your-image.com/churn-dashboard.png)
+![Customer Churn Dashboard Preview](Images/Dashboard_Screenshot.png)
 
 ## 🌐 Let's Dive Deeper
 
