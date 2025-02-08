@@ -67,7 +67,7 @@ Feedback is invaluable—feel free to open issues or reach out directly!
 
 ## 📷 Dashboard Previews
 
-![Customer Churn Dashboard Preview](Images/Dashboard_Screenshot.png)
+![Customer Churn Dashboard Preview](Customer%20Churn%20Analysis%20/Images/Dashboard_Screenshot.png)
 
 ## 🌐 Let's Dive Deeper
 
