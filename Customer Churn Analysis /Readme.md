@@ -49,29 +49,27 @@ Data preparation is a critical step in any data analysis project. It ensures tha
 
 ##### Data Import:
 
-##### Imported the raw data into Power BI Desktop.
-
-Opened the Power Query editor to begin the data transformation process.
+- Imported the raw data into Power BI Desktop.
+- Opened the Power Query editor to begin the data transformation process.
 
 ##### Renaming the Dataset:
 
-Renamed the dataset from customer_churn_data to Customer_Data for clarity and better representation of its content.
+- Renamed the dataset from customer_churn_data to Customer_Data for clarity and better representation of its content.
 
 ##### Promoting Headers:
 
-The dataset had an auto-generated header. Promoted the first row to serve as the header, ensuring column names accurately reflected the data they contained.
-
-This was done using the "Use First Row as Headers" option in both the Home and Transform tabs of Power Query Editor.
+- The dataset had an auto-generated header. Promoted the first row to serve as the header, ensuring column names accurately reflected the data they contained.
+- This was done using the "Use First Row as Headers" option in both the Home and Transform tabs of Power Query Editor.
 
 ##### Data Cleaning and Reduction
 
-##### Removing Irrelevant Columns:
+###### Removing Irrelevant Columns:
 
-###### Eliminated the estimated_salary column:
+- Eliminated the estimated_salary column:
 
-Rationale: The column contained estimated values, and with the balance column available—which provides actual account balances—the estimated_salary was considered less reliable and potentially redundant.
+- Rationale: The column contained estimated values, and with the balance column available—which provides actual account balances—the estimated_salary was considered less reliable and potentially redundant.
 
-Action: Right-clicked on the estimated_salary column header and selected "Remove" to eliminate it from the dataset.
+- Action: Right-clicked on the estimated_salary column header and selected "Remove" to eliminate it from the dataset.
 
 #### **Data Categorization and Grouping**
 
@@ -84,13 +82,13 @@ The products_number column indicated the type of account a customer owns, repres
 
 Used the "Replace Values" option to change numeric identifiers to more descriptive labels:
 
-Replaced 1 with "Product 1"
+- Replaced 1 with "Product 1"
 
-Replaced 2 with "Product 2"
+- Replaced 2 with "Product 2"
 
-Replaced 3 with "Product 3"
+- Replaced 3 with "Product 3"
 
-Replaced 4 with "Product 4"
+- Replaced 4 with "Product 4"
 
 Deleted the original numeric column after re-labeling to maintain data cleanliness.
 
@@ -106,56 +104,57 @@ From the View tab, enabled Column Profile to examine the distribution and distin
 
 ###### age:
 
-60 distinct values ranging from 18 to 82.
+- 60 distinct values ranging from 18 to 82.
 
 ###### credit_score:
 
-354 distinct values ranging from 376 to 850.
+- 354 distinct values ranging from 376 to 850.
 
 ###### balance:
 
-649 distinct values ranging from 0 to 213,146.20.
+- 649 distinct values ranging from 0 to 213,146.20.
 
 ##### Grouping Using Conditional Columns:
 
 Employed the "Conditional Column" feature to create bins or groups for:
 
-Age Groups (e.g., < 20, 21 - 30, 31 - 40, 41 - 50, 51 - 60, 61 - 70, > 71)
+- Age Groups (e.g., < 20, 21 - 30, 31 - 40, 41 - 50, 51 - 60, 61 - 70, > 71)
 
-Credit Score Ranges (e.g., <=400, 401 - 500, 501 - 600, 601 - 700, 701 - 800, > 800)
+- Credit Score Ranges (e.g., <=400, 401 - 500, 501 - 600, 601 - 700, 701 - 800, > 800)
 
 #### Formatting
 
-Ensuring data is intuitive and easy to interpret is essential, especially when presenting findings.
+- Ensuring data is intuitive and easy to interpret is essential, especially when presenting findings.
 
 ##### Converting Boolean Columns
 
-The columns churn, active_member, and credit_card used binary values (0 and 1) to represent statuses. To make the data more understandable:
+- The columns churn, active_member, and credit_card used binary values (0 and 1) to represent statuses. To make the data more understandable:
 
-##### active_member:
+###### active_member:
 
-Replaced 0 with "InActive"
+- Replaced 0 with "InActive"
 
-Replaced 1 with "Active"
+- Replaced 1 with "Active"
 
-##### churn:
+###### churn:
 
-Replaced 0 with "Yes"
+- Replaced 0 with "Yes"
 
-Replaced 1 with "No"
+- Replaced 1 with "No"
 
-##### credit_card:
+###### credit_card:
 
-Replaced 0 with "Not Owned"
+- Replaced 0 with "Not Owned"
 
-Replaced 1 with "Owned"
+- Replaced 1 with "Owned"
 
-##### Adjusting Data Types
+###### Adjusting Data Types
+
 Verified and adjusted data types for all columns to ensure accuracy in calculations and visualizations.
 
 For example, ensured that numerical data was set to Whole Number or Decimal Number as appropriate, and categorical data was set to Text.
 
-4. Data Transformation
+#### Data Transformation
 
 Further transformations were performed to enhance data usability and reporting capabilities.
 
@@ -169,55 +168,51 @@ After grouping some columns and introducing symbols (e.g., <, >=) in group label
 
 Creating Reference Tables:
 
-For each affected column (age, credit_score, balance), created a new reference table:
+- For each affected column (age, credit_score, balance), created a new reference table:
 
-Right-clicked on the original query in the Queries pane and selected "Reference".
+- Right-clicked on the original query in the Queries pane and selected "Reference".
 
 ##### Removing Unnecessary Columns:
 
-In each reference table, removed all columns except the one of interest.
+- In each reference table, removed all columns except the one of interest.
 
 ##### Eliminating Duplicates:
 
-Removed duplicate rows to have a list of unique group labels.
+- Removed duplicate rows to have a list of unique group labels.
 
 ##### Adding Index for Custom Sort Order:
 
-Added an Index Column that assigns a numerical value representing the desired sort order.
+- Added an Index Column that assigns a numerical value representing the desired sort order.
 
-Used the "Conditional Column" option to manually set index values based on logical order.
+- Used the "Conditional Column" option to manually set index values based on logical order.
 
 ##### Changing Data Types:
 
-Ensured the index columns were set to Whole Number data type for proper sorting.
+- Ensured the index columns were set to Whole Number data type for proper sorting.
 
 ##### Implementing Custom Sort in the Model:
 
-In the main data table, used the "Sort By Column" feature to sort the grouped column based on the index from the reference table.
+- In the main data table, used the "Sort By Column" feature to sort the grouped column based on the index from the reference table.
 
 ##### Renaming Columns for Clarity
 
 Updated column names to be more descriptive, enhancing readability in reports and visualizations:
 
-active_member ➔ "Active Status"
+- active_member ➔ "Active Status"
 
-customer_id ➔ "Customer ID"
+- customer_id ➔ "Customer ID"
 
-balance ➔ "Account Balance"
+- balance ➔ "Account Balance"
 
-products_number ➔ "Product"
+- products_number ➔ "Product"
 
-5. Finalizing Data Preparation
+#### Finalizing Data Preparation
 
-After completing all transformations and verifications:
+- After completing all transformations and verifications:
 
-Clicked on "Close & Apply" in Power Query Editor.
+- Clicked on "Close & Apply" in Power Query Editor.
 
-Loaded the cleaned and transformed data into Power BI for analysis and visualization.
-
-Result:
-
-Ended up with four well-structured tables ready for data modeling and report creation.
+- Loaded the cleaned and transformed data into Power BI for analysis and visualization.
 
 ### 2. **Data Modeling**
 
@@ -235,7 +230,7 @@ Understanding and defining relationships between tables is crucial for accurate 
   - **Arranging Tables**:
     - Organized the tables logically to reflect their relationships, making the data model easier to understand and maintain.
 
-![Data Model Diagram]("D:\Data Modeling .png")
+![Data Model Diagram](Images/Data_Model_Diagram.png)
 
 ### 3. **Visualization — Report**
 
@@ -301,7 +296,7 @@ Visualization transforms data into actionable insights. Here's how I built the r
   - Enabled cross-filtering to see how different factors influence churn collectively.
   - Included tooltips with additional insights when hovering over data points.
 
-![Dashboard Screenshot]("D:\Dashboard.png")
+![Dashboard Screenshot](Images/Dashboard_Screenshot.png)
 
 ### 4. **Insights**
 
@@ -379,9 +374,7 @@ This Power BI analysis provided valuable insights into the major factors influen
 
 ## 📈 Dashboard Preview
 
-*(Include updated screenshots or images of your dashboard here)*
-
-![Customer Churn Dashboard](link-to-your-dashboard-image)
+![Customer Churn Dashboard](Images/Dashboard_Screenshot.png)
 
 ## 📂 Project Structure
 
@@ -410,7 +403,7 @@ To explore the dashboard and analysis:
 2. **Open the Dashboard**:
 
    - Ensure you have the latest version of [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/) installed.
-   - Open the `Customer_Churn_Dashboard.pbix` file located in the `Dashboard` folder.
+   - Open the `Bank Customer Churn Dashboard.pbix` file located in the `Dashboard` folder.
 
 3. **Explore the Data**:
 
@@ -421,7 +414,7 @@ To explore the dashboard and analysis:
 
 Contributions are welcome! If you have suggestions or improvements:
 
-- **Fork** the repository.
+- **Fork** the repository. 
 - **Create** a new branch: `git checkout -b feature/YourFeature`
 - **Commit** your changes: `git commit -m 'Add your feature'`
 - **Push** to the branch: `git push origin feature/YourFeature`
