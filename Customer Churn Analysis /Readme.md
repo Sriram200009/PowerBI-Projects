@@ -45,7 +45,7 @@ The primary goal of this analysis is to uncover the key factors contributing to 
 
 Data preparation is a critical step in any data analysis project. It ensures that the data is clean, consistent, and ready for meaningful analysis. Here's how I prepared the dataset for this project:
 
-#### 1. **Importing and Initial Transformation**
+#### **Importing and Initial Transformation**
 
 ##### Data Import:
 
@@ -73,7 +73,7 @@ Rationale: The column contained estimated values, and with the balance column av
 
 Action: Right-clicked on the estimated_salary column header and selected "Remove" to eliminate it from the dataset.
 
-#### 2. **Data Categorization and Grouping**
+#### **Data Categorization and Grouping**
 
 Organizing data into meaningful categories enhances the analysis process. Here's how I categorized and grouped specific columns:
 
@@ -124,7 +124,7 @@ Age Groups (e.g., < 20, 21 - 30, 31 - 40, 41 - 50, 51 - 60, 61 - 70, > 71)
 
 Credit Score Ranges (e.g., <=400, 401 - 500, 501 - 600, 601 - 700, 701 - 800, > 800)
 
-3. Formatting
+#### Formatting
 
 Ensuring data is intuitive and easy to interpret is essential, especially when presenting findings.
 
