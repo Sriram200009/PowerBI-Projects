@@ -244,9 +244,9 @@ Visualization transforms data into actionable insights. Here's how I built the r
 
 1. **Customers (Number of Customers)**
 
-   - **Formula**:
+- **Formula**:
      ```DAX
-    No of Customers = count (Customer_Data[Customer_ID])
+     No of Customers = count('Customer_Data'[Customer_ID])
      ```
    - **Explanation**:
      - Counts the unique customer IDs to determine the total number of customers.
@@ -255,10 +255,9 @@ Visualization transforms data into actionable insights. Here's how I built the r
 
 2. **Customers Churned**
 
-   - **Formula**:
+- **Formula**:
      ```DAX
-    Customer Churned = CALCULATE(COUNT(Customer_Data[Churn]), Customer_Data[Churn] = "Yes")
-       )
+     Customer Churned = CALCULATE(COUNT('Customer_Data'[Churn]), 'Customer_Data'[Churn] = "Yes")
      ```
    - **Explanation**:
      - Calculates the number of customers who have churned.
@@ -295,8 +294,6 @@ Visualization transforms data into actionable insights. Here's how I built the r
 - **Interactive Elements**:
   - Enabled cross-filtering to see how different factors influence churn collectively.
   - Included tooltips with additional insights when hovering over data points.
-
-![Dashboard Screenshot](Images/Dashboard_Screenshot.png)
 
 ### 4. **Insights**
 
