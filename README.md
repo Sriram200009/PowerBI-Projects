@@ -74,7 +74,7 @@ Feedback is invaluable—feel free to open issues or reach out directly!
 If you're interested in the process behind these projects, I've documented my approach, challenges, and learnings in separate markdown files within each project folder. It's all about sharing knowledge and inspiring others in the data community.
 
 ## License
-You can use this dataset to build your own project and practice your SQL skills.
+You can use this dataset to build your own project and practice your Power BI skills.
 
 ## Acknowledgements
 - Special thanks to the tutorials and resources that inspired these projects.
