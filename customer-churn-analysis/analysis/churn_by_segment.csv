@@ -1,0 +1,27 @@
+segment,group,customers,churned,churn_rate
+Products held,1,5084,1409,0.277
+Products held,2,4590,348,0.076
+Products held,3,266,220,0.827
+Products held,4,60,60,1.000
+Age,18-30,1968,148,0.075
+Age,31-40,4451,538,0.121
+Age,41-50,2320,788,0.340
+Age,51-60,797,448,0.562
+Age,61-70,331,104,0.314
+Age,71+,133,11,0.083
+Country,France,5014,810,0.162
+Country,Spain,2477,413,0.167
+Country,Germany,2509,814,0.324
+Activity,Active,5151,735,0.143
+Activity,Inactive,4849,1302,0.269
+Gender,Male,5457,898,0.165
+Gender,Female,4543,1139,0.251
+Tenure (years),0-2,2496,528,0.212
+Tenure (years),3-6,3977,821,0.206
+Tenure (years),7-10,3527,688,0.195
+Credit score,<=400,19,19,1.000
+Credit score,401-500,624,133,0.213
+Credit score,501-600,2423,513,0.212
+Credit score,601-700,3818,753,0.197
+Credit score,701-800,2471,492,0.199
+Credit score,801+,645,127,0.197
